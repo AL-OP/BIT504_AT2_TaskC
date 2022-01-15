@@ -89,13 +89,13 @@ public class GameMain extends JPanel implements MouseListener{
 	public void paintComponent(Graphics g) {
 		//fill background and set colour to white
 		super.paintComponent(g);
-		setBackground(Color.WHITE);
+		setBackground(Color.BLACK);
 		//ask the game board to paint itself
 		board.paint(g);
 		
 		//set status bar message
 		if (currentState == GameState.Playing) {          
-			statusBar.setForeground(Color.BLACK);          
+			statusBar.setForeground(Color.WHITE);          
 			if (currentPlayer == Player.Cross) {   
 			
 				//displays "X's Turn" on status bar
